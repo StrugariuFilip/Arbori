@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acasă</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a class="cta nav-linksclick activect" href="index.html">Acasă</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-linksclick" href="tipuri.html">Tipuri de arbori</a></li>
+                <li><a class="nav-linksclick" href="algoritmi.html">Algoritmi și aplicații</a></li>
+                <li><a class="nav-linksclick" href="Utilizare.html">Utilizarea arborilor</a></li>
+            </ul>
+        </nav>
+        <a class="cta nav-linksclick " href="despre.html">Despre mine</a>
+    </header>
+    <main>
+        <div class="titlu">Ce sunt arborii?</div>
+        <div class="defcont">
+            <div class="definite">
+                <p class="text">Un arbore în teoria grafurilor este un tip special de graf aciclic (fără cicluri) și
+                    conex (oricare două noduri sunt
+                    conectate printr-un drum). Structura unui arbore este de tip ierarhic, în sensul că există un nod
+                    special numit rădăcină
+                    și fiecare alt nod este legat de un singur nod părinte, cu excepția rădăcinii.
+                </p>
+            </div>
+            <img src="/imagini/arbori.png" class="arboreex" alt="Arbore exemplu"></img>
+        </div>
+        <div class="titlu2">Componentele arborilor</div>
+        <div class="componente">
+            <div class="imagine">
+                <img src="/imagini/arborecomp.jpg" class="arborecomp" alt="Arbore exemplu"></img>
+            </div>
+            <div class="lista">
+                <ul>
+                    <li>
+                        <p>Noduri</p> - Reprezintă elementele individuale ale arborelui.
+                    </li>
+                    <li>
+                        <p>Muchii </p>- Reprezintă legăturile dintre noduri.
+                    </li>
+                    <li>
+                        <p>Rădăcină </p>- Nodul de bază al arborelui, care nu are niciun părinte.
+                    </li>
+                    <li>
+                        <p>Frunze </p>- Nodurile fără niciun copil, situate la capătul de jos al arborelui.
+                    </li>
+                    <li>
+                        <p>Noduri interne</p> - Nodurile care au cel puțin un copil.
+                    </li>
+                    <li>
+                        <p>Subarbori</p> - Fiecare nod și descendenții săi formează subarbori.
+                    </li>
+                    <li>
+                        <p>Nivele</p> - Nivelul unui nod este determinat de distanța sa de la rădăcină.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="titlu3">Proprietățile arborilor</div>
+        <div class="componente2">
+            <div class="lista2">
+                <ul>
+                    <li>Fiecare nod, cu excepția rădăcinii, are un singur părinte.</li>
+                    <li>Nu există cicluri sau drumuri ciclice în arbore.</li>
+                    <li>Există exact un drum între oricare două noduri din arbore.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="titlu3">Cum se crează un arbore?</div>
+        <div class="componente3">
+            <p class="text2">
+                Arborii sunt creați prin vectorul de tați.
+                <br>Elementul cu valoarea 0 în vector este rădăcina.<br>Fiecare valoare din vector este părintele
+                indicelui.
+                <br>În exemplu din dreapta i reprezintă nodul, iar T părintele său.
+            </p>
+            <img src="/imagini/vectortati.png" class="vectort"></img>
+        </div>
+        <a href="index.html" class="scroll-arrow"></a>
+        <br><br>
+        <div class="titlu4">Acum că am înțeles ce sunt arborii , haide să îi cunoaștem mai bine.</div>
+        <div class="linkuri">
+                <div class="tipurilink"> <a href="tipuri.html">Tipuri de arbori</a></div>
+                <div class="algoritmilink"><a href="algoritmi.html">Algoritmi și aplicații</a></div>
+                <div class="utilizarelink"><a href="Utilizare.html">Utilizarea arborilor</a></div>
+        </div>
+    </main>
+    <script src="/java/fundal.js"></script>
+</body>
+
+</html>

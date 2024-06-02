@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+body {
+    background: #6b0078;
+    overflow-x: hidden;
+}
+
+main {
+    z-index: 100;
+}
+li,
+a {
+    font-family: gilroy-bold;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding: 20px 10%;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.cta {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta:hover {
+    transition: all 0.3 ease 0s;
+    color:red;
+}
+
+.nav-links {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3 ease 0s;
+}
+
+.nav-links li a:hover {
+    color: red;
+    transition: all 0.3 ease 0s;
+}
+
+.active {
+    border-bottom: 2px solid white;
+    color: red;
+}
+.titlu {
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+}
+.titlu2{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+}
+.tipuriarb{
+    display: flex;
+    flex-direction: column;
+}
+.textb {
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 24px;
+}
+.binar{
+    display: flex;
+    justify-content: space-between;
+    margin-left:20px;
+    margin-right:20px;
+}
+.titlu3{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    color:red;
+}
+.text{
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 24px;
+}
+.binarimg{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 300px;
+    height: auto;
+}
+.cautare{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.binarcautimg{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left:20px;
+    width: 300px;
+    height: auto;
+}
+.AVL{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.avlimg{
+    background-color:white;
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    margin-right: 40px;
+}
+.texta{
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 30px;
+    font-size: 24px;
+}
+.rosu-negru{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.rosuimg{
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    margin-left:20px;
+}
+.binomial{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.binoimg{
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+    background-color: white;
+}
+.Trie{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.trieimg{
+    width: 250px;
+    height: auto;
+    margin-top: 20px;   
+    margin-left: 20px;
+}
+.segmentarb{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.segmentarbimg{
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.Splay{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.Splayimg{
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.titlu4{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    color: red;
+    margin-bottom: 20px ;
+}
+.dropzone {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    border: 2px dashed white;
+    border-radius: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.segment {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:red;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 100px;
+    height: 100px;
+}
+
+.draggable {
+    cursor: grab;
+    user-select: none;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 5px;
+}
+.confirmare{
+    display: flex;
+    justify-content: center;
+}
+.confirmBtn {
+    margin-top: 20px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+.confirmBtn:hover{
+    background-color: red;  
+}
+#solutionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#solutionContainer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#solutionContainer li {
+    text-align: center;
+}
+.scroll-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('/imagini/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    display: none;
+    z-index: 9999;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    border-radius: 50%;
+}
+
+.scroll-arrow.show {
+    display: block;
+}
+
+.scroll-arrow:hover {
+    opacity: 1;
+}
+.dot {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;
+    animation-name: moveLeftRight;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-top: 80px;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}

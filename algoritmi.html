@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducere</title>
+    <link rel="stylesheet" href="css/algoritmi.css">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a class="cta nav-linksclick" href="index.html">Acasă</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-linksclick" href="tipuri.html">Tipuri de arbori</a></li>
+                <li><a class="nav-linksclick active" href="algoritmi.html">Algoritmi și aplicații</a></li>
+                <li><a class="nav-linksclick" href="Utilizare.html">Utilizarea arborilor</a></li>
+            </ul>
+        </nav>
+        <a class="cta nav-linksclick" href="despre.html">Despre mine</a>
+    </header>
+    <main>
+    <div class="titlu">Arborii folosesc mai multe tipuri de algoritmi</div>
+    <div class="titlu1">Algoritmul de Inserare în Arbori Binari de Căutare (Binary Search Tree Insertion)</div>
+    <div class="componente">
+        <div class="stanga">
+            <div class="descriere"><p class="tite">Descriere:</p>
+            Inserarea unui nod într-un arbore binar de căutare (BST) astfel încât arborele să rămână sortat.
+        Datorită structurii sale, căutarea unui element se face foarte eficient.</div>
+        </div>
+        <dreapta>
+            <div class="pasi"><p class="titd">Pași:</p>
+            <ul>
+                <li>Începe la rădăcina arborelui.</li>
+                <li>Compară valoarea nodului care trebuie inserat cu valoarea nodului curent.</li>
+                <li>Dacă valoarea este mai mică și subarborele stâng este gol, inserează nodul acolo; altfel, repetă pentru subarborele
+                stâng.</li>
+                <li>Dacă valoarea este mai mare și subarborele drept este gol, inserează nodul acolo; altfel, repetă pentru subarborele
+                drept.</li>
+            </ul>
+            </div>
+        </dreapta>
+    </div> 
+    <div class="imgBst">
+           <img src="/imagini/insertion.png" class="bst">
+    </div>
+    <div class="titlu1">Algoritmul de Parcurgere în Adâncime (Depth-First Search - DFS)</div>
+    <div class="componente">
+        <div class="stanga">
+            <div class="descriere">
+                <p class="titd">Descriere:</p>
+            Parcurgerea unui arbore explorând cât mai departe fiecare ramură înainte de a reveni.Ex:<br>
+            Preordine 4, 3, 5, 2, 6, 1, 8, 7, 10, 9, 11, 12
+            <br>
+            Inordine: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+            <br>
+            Postordine: 4, 5, 3, 6, 2, 8, 10, 11, 12, 9, 7, 1
+            </div>
+        </div>
+        <dreapta>
+            <div class="pasi">
+                <p class="titd">Tipuri:</p>
+                <ul>
+                    <li>Preordine (Preorder): Vizitează nodul curent, apoi parcurge subarborele stâng și subarborele drept. (RSD)</li>
+                    <li>Inordine (Inorder): Parcurge subarborele stâng, vizitează nodul curent, apoi parcurge subarborele drept.(SRD)</li>
+                    <li>Postordine (Postorder): Parcurge subarborele stâng, parcurge subarborele drept, apoi vizitează nodul curent.(SDR)</li>
+                    <li></li>
+                </ul>
+            </div>
+        </dreapta>
+    </div>
+    <div class="imgBst" >
+        <img src="/imagini/dfs.png" class="bst">
+    </div>
+    <div class="titlu1">Traversarea în Lățime (BFS - Breadth-First Search)</div>
+    <div class="componente">
+        <div class="stanga">
+            <div class="descrieres">
+                <p class="tite">Descriere:</p>
+                BFS este o metodă de traversare a unui arbore sau a unui grafic, unde se pornește de la rădăcină și se explorează toate
+                nodurile la nivelul curent înainte de a trece la nivelul următor. Într-un arbore binar, această traversare se face de la
+                stânga la dreapta, nivel cu nivel.
+                <br>
+                BFS:1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+            </div>
+        </div>
+        <dreapta>
+            <div class="pasi">
+                <p class="titd">Cum funcționează?</p>
+                <ul>
+                    <li>Se creează o coadă goală (queue) pentru a ține evidența nodurilor care trebuie explorate și se adaugă rădăcina.</li>
+                    <li>Cât timp coada nu este goală se scoate primul nod din coadă, se marchează ca vizitat nodul,se ia valoarea și se adaugă vecinii.</li>
+                    <li>Algoritmul se termină atunci când toate nodurile accesibile de la nodul de pornire au fost vizitate, iar coada este goală..</li>
+                </ul>
+            </div>
+        </dreapta>
+    </div>
+    <div class="imgBst">
+        <img src="/imagini/bfs.png" class="bst">
+    </div>
+    <a href="algoritmi.html" class="scroll-arrow"></a>
+    </main>
+    <script src="/java/fundal.js"></script>
+</body>
+
+</html>

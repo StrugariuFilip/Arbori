@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color:white;
+}
+body {
+    background: #6b0078;
+}
+main {
+    z-index: 100;
+}
+.nav-links li,a{
+    font-family: gilroy-bold;
+    font-weight: 500;
+    font-size: 16px;
+    color:#edf0f1;
+    text-decoration: none;
+}
+
+header{
+    background-color:black;
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding: 20px 10%;
+    width: 100%;
+    top:0;
+    z-index: 1000;
+}
+
+.cta {
+    cursor:pointer;
+    text-decoration: none;
+}
+.cta:hover{
+    transition: all 0.3 ease 0s;
+    color:red;
+}
+.nav-links{
+    list-style: none;
+    text-decoration: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    transition: all 0.3 ease 0s;
+}
+.nav-links li a:hover{
+    color:red;
+    transition: all 0.3 ease 0s;
+}
+
+.active{
+    border-bottom: 2px solid white;
+    color: red;
+}
+.activect {
+    color: red;
+    text-decoration: none;
+}
+.titlu{
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    color:red;
+}
+.defcont{
+    display: inline flex;
+}
+.definite{
+    margin-top: 7%;
+    margin-left: 20px;
+    margin-right:10px;
+    width: 70%;
+    font-size: 24px;
+}
+.text{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    justify-content: center;
+}
+.arboreex{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 250px;
+    height: auto;
+    display: flex;
+}
+.titlu2{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    color: red;
+}
+.lista{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.lista ul{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.lista li{
+    font-size: 24px;
+    list-style-type: none;
+    padding: 5px;
+}
+.lista li p{
+    display: inline;
+    font-size: 24px;
+    font-weight: bold;
+}
+.componente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagine{
+    display: flex;
+    justify-content: center;
+}
+.arborecomp{
+    margin-top: 20px;
+    width: 500px;
+    height: auto;
+}
+
+.titlu3{
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    color: red;
+}
+.lista2 {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+
+.lista2 ul {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.lista2 li {
+    width: fit-content;
+    font-size: 24px;
+    list-style-type: none;
+    padding: 5px;
+}
+.componente2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.componente3{
+    display: flex;
+}
+.text2{
+    width: 50%;
+    margin-top: 6%;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 24px;
+    margin-left: 5%;
+    margin-right: 0;
+}
+.vectort{
+   display: flex;
+   margin-top: 5%;
+   margin-right:10px;
+   margin-left: 10%;
+}
+.titlu4{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    margin-left: 10px;
+    color: red;
+}
+.linkuri{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.linkuri>div{
+        margin: 0 5px;
+}
+.linkuri>div:not(:last-child){
+    margin-right: 10px;
+}
+.tipurilink,
+.algoritmilink,
+.utilizarelink {
+    display: flex;
+    align-items: center;
+    background-color:black;
+    padding:20px;
+    transition: background-color 0.3s;
+}
+.tipurilink:hover,
+.algoritmilink:hover,
+.utilizarelink:hover{
+    background-color: red;
+}
+.scroll-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('/imagini/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    display: none;
+    z-index: 9999;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-arrow.show {
+    display: block;
+}
+
+.scroll-arrow:hover {
+    opacity: 1;
+}
+.dot {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;
+    animation-name: moveLeftRight;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top:80px;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}

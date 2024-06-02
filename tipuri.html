@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipuri de arbori</title>
+    <link rel="stylesheet" href="css/tipuri.css">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="cta nav-linksclick" href="index.html">Acasă</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-linksclick active" href="tipuri.html">Tipuri de arbori</a></li>
+                <li><a class="nav-linksclick" href="algoritmi.html">Algoritmi și aplicații</a></li>
+                <li><a class="nav-linksclick" href="Utilizare.html">Utilizarea arborilor</a></li>
+            </ul>
+        </nav>
+        <a class="cta nav-linksclick" href="despre.html">Despre mine</a>
+    </header>
+    <main>
+        <div class="titlu">În teoria grafurilor există mai multe tipuri de arbori.</div>
+        <div class="titlu2">Iată câteva tipuri de arbori:</div>
+        <div class="titlu3">Arborele binar</div>
+        <div class="binar">
+                    <div class="textb">Este unul dintre cele mai simple tipuri de arbori, utilizat frecvent în structurile de date și algoritmi. Fiecare nod
+                    poate avea cel mult doi copii: un copil stânga și un copil dreapta.</div>
+                    <img src="/imagini/binar.png" class="binarimg">
+        </div> 
+        <div class="titlu3">Arborele binar de căutare</div>
+        <div class="cautare">
+            <img src="/imagini/binarcautare.png" class="binarcautimg">
+            <div class="text">Este un arbore binar în care fiecare nod are o valoare, iar valorile sunt organizate astfel încât toate valorile din
+            subarborele stâng sunt mai mici decât valoarea nodului, iar toate valorile din subarborele drept sunt mai mari sau egale
+            cu valoarea nodului. Acest tip de arbore este utilizat în căutările eficiente și în alte operații asociate structurilor
+            de date.</div>
+        </div>
+        <div class="titlu3">Arborele AVL</div>
+        <div class="AVL">
+            <div class="texta">Este un tip de arbore binar echilibrat în care diferența de înălțime între subarborii stâng și drept ai fiecărui nod
+            este cel mult 1. Acest lucru asigură că operațiile de inserare și ștergere în arbore sunt eficiente, cu un timp de
+            execuție logaritmic.</div>
+            <img src="/imagini/avl.png" class="avlimg">
+        </div>
+        <div class="titlu3">Arborele roșu-negru</div>
+        <div class="rosu-negru">
+            <img src="/imagini/red.png" class="rosuimg">
+            <div class="text">Este un alt tip de arbore binar echilibrat în care fiecare nod este colorat fie roșu, fie negru, iar regulile de
+            echilibrare sunt menținute prin reechilibrarea culorilor și rotații. Arborele roșu-negru este folosit în implementările
+            eficiente ale structurilor de date, precum tabelele de dispersie.</div>
+        </div>
+        <div class="titlu3">Arborele binomial</div>
+        <div class="binomial">
+            <div class="text">Este un tip de arbore utilizat pentru reprezentarea structurilor de date și pentru implementarea unor algoritmi precum
+            coada de priorități și Heap-ul binomial.Structura sa se bazează pe noduri care au subarbori, denumiți arborele binomial de rang k, unde k este puterea a două în
+            conformitate cu regulile specifice binomiale.</div>
+            <img src="/imagini/binomial.png" class="binoimg">
+        </div>
+        <div class="titlu3">Arborele Trie</div>
+        <div class="Trie">
+            <img src="/imagini/trie.png" class="trieimg">
+            <div class="texta">Este un arbore utilizat pentru stocarea și căutarea eficientă a unui set de șiruri de caractere sau cuvinte.Fiecare nod din arbore reprezintă un caracter, iar fiecare cale de la rădăcină până la un nod terminal reprezintă un șir
+            de caractere.</div>
+        </div>
+        <div class="titlu3">Arborele segment</div>
+        <div class="segmentarb">
+            <div class="text">Este un arbore utilizat pentru a efectua interogări asupra unui interval sau a unui segment dintr-un șir de date.Utilizat frecvent în problemele de interogare a intervalului în algoritmi precum Segment Tree Query și Update.</div>
+            <img src="/imagini/segment.jpg" class="segmentarbimg">
+        </div>
+        <div class="titlu3">Arborele Splay</div>
+        <div class="Splay">
+            <img src="/imagini/splay.png" class="Splayimg">
+            <div class="text">Este utilizat pentru a optimiza frecvența de acces la date, mutând nodurile accesate recent la rădăcină.Operațiile de căutare, inserare și ștergere sunt eficiente, deoarece arborele tinde să aducă nodurile mai frecvent
+            accesate la nivelul superior al arborelui.</div>
+        </div>
+        <div class="titlu4">Hai să ne și jucăm un pic , încearcă să poziționezi arbori în ordinea corectă.</div>
+        <div id="container">
+            <div id="draggables-container"></div>
+            <div id="dropzone" class="dropzone">
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+            </div>
+            <div class="confirmare"><button id="confirmBtn" class="confirmBtn">Confirm</button></div>
+        </div>
+        <div class="confirmare"><button id="solutionBtn" class="confirmBtn">Vezi soluția corectă</button></div>
+        <div id="solutionContainer"></div>
+        <a href="tipuri.html" class="scroll-arrow"></a>
+        <br>
+        <br>
+    </main>
+    <script src="/java/joculet.js"></script>
+    <script src="/java/fundalt.js"></script>
+</body>
+
+</html>
