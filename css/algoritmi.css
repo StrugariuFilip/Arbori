@@ -155,8 +155,48 @@ header {
     border-radius: 10px;
     margin-right: 20px;
 }
-
-
+.descrieres{
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid white;
+    color: white;
+    width: 70%;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.pasid{
+    font-size: 24px;
+    margin-top: 50px;
+    font-weight: bold;
+    border: 2px solid white;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.pasid li{
+    list-style: none;
+    font-size: 20px;
+}
+.dreaptaa{
+    display: flex;
+    margin-right: 40px;
+    width: 100%;
+}
+.dreaptaaa{
+    display: flex;
+    margin-right: 40px;
+    width: 40%;
+}
+.stangaaa{
+    display: flex;
+    margin-left: 20px;
+    width: 100%;
+}
 
 
 .scroll-arrow {
