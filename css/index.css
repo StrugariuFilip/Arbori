@@ -72,7 +72,8 @@ header{
     color:red;
 }
 .defcont{
-    display: inline flex;
+    display: flex;
+    justify-content:space-between;
 }
 .definite{
     margin-top: 7%;
