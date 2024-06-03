@@ -233,8 +233,10 @@ header{
     bottom: 20px;
     right: 20px;
     width: 40px;
-    height: 40px;
-    backround-color:white;
+    height: 40px;  
+    background-image: url('./imagini/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 60%;
     display: none;
     z-index: 9999;
